@@ -15,11 +15,11 @@ public class Order {
         this.discountPrice = discountPrice;
     }
 
-    public int calculatePrice(){
+    public int calculatePrice() {
         return itemPrice - discountPrice;
     }
 
-    public Long getMemberId(){
+    public Long getMemberId() {
         return memberId;
     }
 
@@ -37,6 +37,11 @@ public class Order {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Order{" +
+            "memberId=" + memberId +
+            ", itemName='" + itemName + '\'' +
+            ", itemPrice=" + itemPrice +
+            ", discountPrice=" + discountPrice +
+            '}';
     }
 }

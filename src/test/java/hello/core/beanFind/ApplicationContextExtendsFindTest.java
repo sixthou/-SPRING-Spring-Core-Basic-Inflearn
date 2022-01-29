@@ -4,7 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import hello.core.discount.DiscountPolicy;
-import hello.core.discount.FixDisountPolicy;
+import hello.core.discount.FixDiscountPolicy;
 import hello.core.discount.RateDiscountPolicy;
 import java.util.Map;
 import org.junit.jupiter.api.DisplayName;
@@ -68,7 +68,7 @@ public class ApplicationContextExtendsFindTest {
 
         @Bean
         public DiscountPolicy fixDiscountPolicy() {
-            return new FixDisountPolicy();
+            return new FixDiscountPolicy();
         }
     }
 }
